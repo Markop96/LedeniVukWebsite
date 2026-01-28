@@ -1,0 +1,227 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html, body {
+    overflow-x: hidden !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.modal-header,
+.modal-footer{
+    border:none !important;
+}
+
+.modal-footer {
+margin-top:-12px;
+}
+
+.modal-backdrop {
+    backdrop-filter: blur(30px); /* jačina blura */
+}
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); /* Safari podrška */
+    background-clip: padding-box; /* Sprečava da blur utiče na sadržaj modala */
+
+}
+
+
+body {
+  margin-bottom: 60px;
+  overflow-x:hidden;
+  width:100% !important;
+  height:100% !important;
+}
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+.navbar {
+    background: linear-gradient(to right, transparent 15%, rgba(74, 74, 74, 0.95), transparent 85%)
+}
+
+.container0 {
+margin-left:0px;
+margin-right:0px;
+}
+
+.container100 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.container50 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.logo img {
+    border-radius: 0;
+    height: 70px;
+    width: auto;
+    filter:drop-shadow(5px 2px 2px black)
+}
+
+section {
+width:100% !important;
+
+}
+
+    img:hover {
+        box-shadow: none !important;
+        transform: none !important;
+    }
+
+.logo img:hover {
+    transform: scale(1.05) !important;
+}
+
+.poiret{
+    font-family: "Poiret One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.bungee{
+    font-family: "Bungee Outline", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.monoton {
+    font-family: "Monoton", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.name {
+font-size:75px;
+margin-top:45px;
+text-transform:uppercase
+}
+
+.abstract {
+    font-size: 30px;
+    font-weight:800;
+    color:lightgray;
+}
+
+
+footer {
+    background: linear-gradient(to right,rgba(0, 53, 102, 1), black) !important;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
+    bottom: 0 !important;
+    margin-top: -35px
+}
+
+.totop {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    font-size: 38px;
+    color: orangered !important;
+    cursor:pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+    .totop:hover {
+    transform:scale(1.1)
+    }
+
+
+.subscript {
+    text-align: justify;
+    font-size: 0.72vw;
+    color: white;
+}
+
+.btnclose {
+    background-color: transparent !important;
+    border: none;
+    position: absolute;
+    right: 0.2vw;
+    top: 0.2vw;
+    font-size: 1vw;
+}
+
+#welcomeModalLabel {
+color:whitesmoke;
+text-transform:uppercase;
+margin-bottom:-20px;
+font-weight:800;
+text-shadow: 2px 2px 3px black;
+}
+
+
+@media (max-width: 768px) {
+    .subscript {
+        text-align: justify;
+        font-size: 2.4vw;
+        padding: 0 1vw;
+        color: white;
+    }
+
+    .btnclose {
+        background-color: transparent !important;
+        border: none;
+        position: absolute;
+        right: 1vw;
+        top: 1vw;
+        font-size: 4vw;
+    }
+
+    #welcomeModalLabel {
+    font-size:4.2vw;
+    }
+
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .subscript {
+        text-align: justify;
+        font-size: 1.5vw;
+        padding: 0 1vw;
+        color: white;
+    }
+
+    .btnclose {
+        background-color: transparent !important;
+        border: none;
+        position: absolute;
+        right: 0.5vw;
+        top: 0.5vw;
+        font-size: 3vw;
+    }
+
+    #welcomeModalLabel {
+        font-size: 2.4vw;
+    }
+}

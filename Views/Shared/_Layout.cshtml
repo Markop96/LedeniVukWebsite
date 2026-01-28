@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/LedeniVuk.styles.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Monoton&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="pic/whitelogopng.ico" type="image/x-icon">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17060934585">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-17060934585');
+    </script>
+
+</head>
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm box-shadow mb-3">
+            <div class="container" style="justify-content:center;">
+                <a class="logo">
+                    <img src="pic/whitelogopng.png" alt="Ledeni Vuk logo - led za ugostitelje, koktele i proslave" loading="lazy" />
+                </a>
+            </div>
+        </nav>
+        <div class="container">
+            <h1 class="name monoton">Ledeni Vuk</h1>
+            <h2 class="abstract poiret">Savršeno hladan led za vašu ugostiteljsku uslugu!</h2>
+        </div>
+    </header>
+
+    <div class="container0">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="text-center poiret">
+        &copy; 2025 LedeniVuk - sva prava zadržana!
+    </footer>
+
+    <a class="totop">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            M.AutoInit();
+        });
+
+        window.onscroll = function () {
+            let totopButton = document.querySelector(".totop");
+
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                totopButton.style.display = "block";
+            } else {
+                totopButton.style.display = "none";
+            }
+        };
+        document.querySelector(".totop").addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' }); 
+        });
+    </script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
